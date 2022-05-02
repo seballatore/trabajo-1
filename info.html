@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car Rental</title>
 </head>
 <body>
     <div class="web">
         <div class="cabecera">
             <header>
                 <div class="header">
-                    <a href="index.html"><img src="img/logo.png" width="100px" alt=""></a>
+                    <a href="index.html"><img src="img/logo.png" class="logo" width="100px" alt=""></a>
                     <ul class="nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="aboutus.html">Acerca de</a></li>
-                        <li><a href="vehicles.html">Vehiculos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                        <li><a href="info.html">Info</a></li>
+                        <div class="topnav" id="myTopnav">
+                            <a href="index.html">Inicio</a>
+                            <a href="aboutus.html">Acerca de</a>
+                            <a href="vehicles.html">Vehiculos</a>
+                            <a href="info.html">Info</a>
+                            <a href="contact.html">Contacto</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                              <i class="fa fa-bars"></i>
+                            </a>
+                          </div>
                     </ul>
                 </div>
             </header>
         </div>
-
-        <form>
-            
 
         <section class="cuerpo">
             <div class="cuerpo1">
@@ -37,18 +39,18 @@
                     <br>
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col" style="background-color: rgb(250, 250, 250); padding: 20px;">
                             <h5>Qué Necesito</h5>
                             <p>Ser mayor de 21 años. En el caso de tener entre 18 y 21 años podés alquilar con un cargo extra (ver cargos adicionales de alquiler).<br>
                             Licencia de conducir vigente del país de residencia<br>
                             Tarjeta de crédito no puede ser recargable (como garantía)</p>
                         </div>
-                        <div class="col">
+                        <div class="col" style="background-color: rgb(225, 225, 225); padding: 20px;">
                             <h5>Cómo Reservo</h5>
                             <p>Reservas online en 4 pasos - Cotizá nuestros vehículos las 24 hs del día de la forma más fácil.<br>
                                 Una vez que enviás tu reserva recibís un mail con N° de confirmación. En caso de no haber disponibilidad queda a requerir bajo un N° de solicitud y un representante se estará comunicando para confirmarla.</p>
                         </div>
-                        <div class="col">
+                        <div class="col" style="background-color: rgb(250, 250, 250); padding: 20px;">
                             <h5>Cómo Pago</h5>
                             <p>Podés abonar con tarjeta de crédito, débito o en efectivo en sucursales. A través de nuestra web con tarjeta de crédito (Se tomará de la tarjeta de crédito del cliente una preautorización por el valor de la garantía que corresponda según la categoría alquilada). El valor del alquiler es diario y la contratación mínima es 24hs. En caso de cancelar tenés que avisar con al menos 24 hs. de anticipación. El servicio de alquiler de autos se paga por adelantado, es decir al momento de retirar el vehículo.</p>
                         </div>
@@ -144,11 +146,6 @@
                 <br>
             </div>
         </section>
-
-
-
-
-        
         <footer><a href="#">Since 2022</a><br>
             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
             <a href="https://isntagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
@@ -159,7 +156,7 @@
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="calc.js"></script>
+    <script src="menu.js"></script>
     <!--Scripts-->
 </body>
 </html>

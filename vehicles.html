@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car Rental</title>
 </head>
 <body>
     <div class="web">
         <div class="cabecera">
             <header>
                 <div class="header">
-                    <a href="index.html"><img src="img/logo.png" width="100px" alt=""></a>
+                    <a href="index.html"><img src="img/logo.png" class="logo" width="100px" alt=""></a>
                     <ul class="nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="aboutus.html">Acerca de</a></li>
-                        <li><a href="vehicles.html">Vehiculos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                        <li><a href="info.html">Info</a></li>
+                        <div class="topnav" id="myTopnav">
+                            <a href="index.html">Inicio</a>
+                            <a href="aboutus.html">Acerca de</a>
+                            <a href="vehicles.html">Vehiculos</a>
+                            <a href="info.html">Info</a>
+                            <a href="contact.html">Contacto</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                              <i class="fa fa-bars"></i>
+                            </a>
+                          </div>
                     </ul>
                 </div>
             </header>
@@ -28,7 +33,7 @@
 
         <section class="cuerpo">
             <div class="vehicles center-block text-center">
-                <h2>Titulo 1</h2>
+                <h2>Nuestra Flota</h2>
                 <br>
                 <br>
                 <div class="container">
@@ -36,59 +41,123 @@
                             <div class="col">
                                 <h5>Chevrolet Cruze</h5>
                                 <img src="img/ccruze.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                             <div class="col">
                                 <h5>Chevrolet Prisma</h5>
                                 <img src="img/cprisma.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                             <div class="col">
                                 <h5>Chevrolet Spin</h5>
-                                <img src="img/cspin.jpg"width="300px"  alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <img src="img/cspin.jpg" width="300px" alt=""><br>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
-                        </div>
                     <br>
                     <br>
+                    <hr>
                     <br>
                     <br>           
                         <div class="row">
                             <div class="col">
                                 <h5>Renault Sandero</h5>
                                 <img src="img/rsandero.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>4 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                             <div class="col">
                                 <h5>Toyota Corola</h5>
                                 <img src="img/tcorolla.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                             <div class="col">
                                 <h5>Toyota Etios</h5>
                                 <img src="img/tetios.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                         </div>
                     <br>
                     <br>
+                    <hr>
                     <br>
                     <br>
                         <div class="row">
                             <div class="col">
                                 <h5>Chevrolet Tracker</h5>
                                 <img src="img/ttracker.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>5P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                             <div class="col">
                                 <h5>Toyota Hilux</h5>
                                 <img src="img/thilux.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>5 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>4P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Diesel</p>
+                                </div>
                             </div>
                             <div class="col">
                                 <h5>Volkswagen UP</h5>
                                 <img src="img/vwup.jpg" width="300px" alt=""><br>
-                                <button type="button" class="btn btn-success">Ver Mas</button>
+                                <div class="descripcion">
+                                    <p><i class="fa-solid fa-person"></i>4 | 
+                                        <i class="fa-solid fa-suitcase"></i>1 | 
+                                        <i class="fa-solid fa-door-closed"></i>3P. | 
+                                        <i class="fa-solid fa-location-dot"></i>Sat. | 
+                                        <i class="fa-solid fa-location-arrow"></i>GPS | 
+                                        <i class="fa-solid fa-gas-pump"></i>Nafta</p>
+                                </div>
                             </div>
                         </div>
                     </div>   
@@ -104,6 +173,7 @@
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
     <!--Scripts-->
 </body>
 </html>
